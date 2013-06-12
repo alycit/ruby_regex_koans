@@ -1,5 +1,5 @@
 describe "Basics" do
-	it 'should demonstrate basic RegEx syntax by replacing eplace /__/ with /a/' do
+	it 'should demonstrate basic RegEx syntax by replacing /__/ with /a/' do
     	'a'.should match(/__/)
   	end
 

@@ -1,2 +1,1 @@
-ruby_regex_koans
-================
+# Regex Koans using Ruby and Rspec

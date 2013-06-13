@@ -1,25 +1,25 @@
 describe "Beginning to End" do
-  # it('^ anchors RegEx to beginning of the string', function() {
-  #   expect( 'dog cat pony' ).not.toMatch(/^cat/);    // This one already works
-    
-  #   expect( 'dog cat pony' ).toMatch(/^___/);        // Fix this one so it passes
-  # });
-  
-  # it('$ anchors RegEx to the end of the string', function() {
-  #   expect( 'dog cat pony' ).not.toMatch(/cat$/);  // This one already works
-    
-  #   expect( 'dog cat pony' ).toMatch(/___$/);      // Fix this one so it passes
-  # });
-  
-  # it('use both to match the entire input', function() {
-  #   expect( 'dog cat pony' ).not.toMatch(/^cat$/);  // This one already works
-    
-  #   expect( 'dog cat pony' ).toMatch(/^___$/);      // Fix this one so it passes
-  # });
-  
-  # it('a RegEx without any anchors will match a substring anywhere in the input', function() {
-  #   // try using "bc" in the RegEx
-    
-  #   expect( 'abcd' ).toMatch(/___/);
-  # });
+  it '^ anchors RegEx to beginning of the string' do
+     'dog cat pony'.should_not match(/^cat/)    # This one already works
+
+     'dog cat pony'.should match(/^___/)        # Fix this one so it passes
+  end
+
+  it '$ anchors RegEx to the end of the string' do
+     'dog cat pony'.should_not match(/cat$/)  # This one already works
+
+     'dog cat pony'.should match(/___$/)      # Fix this one so it passes
+  end
+
+  it 'use both to match the entire input' do
+     'dog cat pony'.should_not match(/^cat$/)  # This one already works
+
+     'dog cat pony'.should match(/^___$/)      # Fix this one so it passes
+  end
+
+  it 'a RegEx without any anchors will match a substring anywhere in the input' do
+     # try using "bc" in the RegEx
+
+     'abcd'.should match(/___/)
+  end
 end

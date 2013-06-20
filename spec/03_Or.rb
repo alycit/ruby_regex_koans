@@ -1,12 +1,15 @@
 describe "Or" do
-	# it('pipe character ( | ) is a regex OR', function() {
- #    var thisPatternWorks = /^dog|cat$/;
- #    var fixThisPattern   = /^___$/;
-    
- #    expect( 'dog' ).toMatch(thisPatternWorks);
- #    expect( 'cat' ).toMatch(thisPatternWorks);
-    
- #    expect( 'hearts' ).toMatch(fixThisPattern);
- #    expect( 'clubs'  ).toMatch(fixThisPattern);
- #  });
+
+	it "should demonstrate that pipe character ( | ) is a regex OR" do
+
+		thisPatternWorks = /dog|cat/
+		var fixThisPattern = /__/
+
+		'dog'.should match(thisPatternWorks)
+		'cat'.should match(thisPatternWorks)
+
+		'hearts'.should match(fixThisPattern)
+		'clubs'.should match(fixThisPattern)
+
+	end
 end

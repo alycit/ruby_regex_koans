@@ -10,13 +10,13 @@ class KoansFormatter < RSpec::Core::Formatters::BaseFormatter
 
   def example_passed(example)
     @passed_count += 1
-    @observations << green("You have mastered: #{example.example_group.description} -> #{example.description}")
+    @observations << green("Mission Accomplished!\n  #{example.example_group.description} -> #{example.description}\n\n")
   end
 
   def example_failed(example)
     unless failed?
       @failure = example.exception
-      @observations << red("Time to contemplate: #{example.example_group.description} -> #{example.description}")
+      @observations << red("Here's your next assignment:\n  #{example.example_group.description} -> #{example.description}")
     end
     exit
   end
@@ -49,7 +49,7 @@ class KoansFormatter < RSpec::Core::Formatters::BaseFormatter
     puts "The current error:"
     puts red(@failure.message)
     puts
-    puts "Please work on fixing this code:"
+    puts "Get in there soldier! There's code to fix:"
     if assert_failed?
       puts embolden_first_line_only(indent(find_interesting_lines(@failure.backtrace)))
     else

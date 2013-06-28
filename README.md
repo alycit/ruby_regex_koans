@@ -17,7 +17,7 @@ To practice, to try out some code before using it in your program, or just to pl
 [rubular](http://rubular.com) is a fantastic Regular Expression resource.  This web tool should be in the Bookmarks list of every programmer.
 
 With many thanks to:
-*  Aaron Brown original Javascript version of the [Regex Koans](https://github.com/frenchroasted/RegexKoans)
+*  Aaron Brown for the original Javascript version of the [Regex Koans](https://github.com/frenchroasted/RegexKoans)
 *  [EdgeCase](http://edgecase.com/) for the original, inspired, and inspirational [Ruby Koans](http://rubykoans.com/)
 
 Installation

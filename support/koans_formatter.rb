@@ -162,6 +162,9 @@ class KoansFormatter < RSpec::Core::Formatters::BaseFormatter
                                                                                                    ;;;   :;;;;    ;;;;;`
                                                                                                     ::   ;;;;;    `;`
                                                                                                          `.:;
+          Ported to Ruby / RSpec by Alyssa Diaz (@alycit) & Chris Vaughn (@mistercvaughn) for Dev Bootcamp
+
+          Original JavaScript version by Aaron Brown https://github.com/frenchroasted/RegexKoans
       ENDTEXT
     puts magenta(completed)
   end

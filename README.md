@@ -28,7 +28,22 @@ Checkout or download the zipped version of this project and extract it to a fold
 Usage
 -----
 * navigate to the directory you extracted your files to in a terminal
-* run bundle
-* run rake
+* run 'bundle' at the command line
+* run 'rake' at the command line
 * Edit the .rb file that the rspec results tell you to edit
+    * The output will guide you to which line of code needs attention.  For example the output below says that the code to fix is on line 3 of `01_Basics.rb`.  The specific error is `expected a to match /^FILL ME IN$/`.  The `FILL ME IN` is where you need to make changes in `01_Basics.rb` on line 3. 
+
+```
+Here's your next assignment:
+  Basics -> should demonstrate basic RegEx syntax by replacing /__/ with /a/
+
+The current error:
+expected a to match /^FILL ME IN$/
+
+Get in there soldier! There's code to fix:
+  /Users/alycit/DBC/ruby_regex_koans/spec/01_Basics.rb:3:in `block (2 levels) in <top (required)>'
+
+Current Progress: [X_________________________________________________] 0/68
+```
+
 * run rake again until all the tests are passing.

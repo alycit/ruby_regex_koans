@@ -162,9 +162,16 @@ class KoansFormatter < RSpec::Core::Formatters::BaseFormatter
                                                                                                    ;;;   :;;;;    ;;;;;`
                                                                                                     ::   ;;;;;    `;`
                                                                                                          `.:;
+          
+          Congratulations!  You are on your way to be coming a Regex Wizard.
+
           Ported to Ruby / RSpec by Alyssa Diaz (@alycit) & Chris Vaughn (@mistercvaughn) for Dev Bootcamp
 
           Original JavaScript version by Aaron Brown https://github.com/frenchroasted/RegexKoans
+
+          Thanks to NeoEdgeContext (aka, Neo, aka New Context, aka Edgecase) http://www.neo.com 
+          for the original inspiration from their Ruby Koans http://www.rubykoans.com
+
       ENDTEXT
     puts magenta(completed)
   end
